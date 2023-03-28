@@ -14,7 +14,7 @@ const userSchema = mongoose.Schema({
     required: true,
   },
   phoneNumber: {
-    type: Number,
+    type: String,
     required: true,
   },
   gender: {
@@ -22,6 +22,10 @@ const userSchema = mongoose.Schema({
     required: true,
   },
   city: {
+    type: String,
+    required: true,
+  },
+  image: {
     type: String,
     required: true,
   },

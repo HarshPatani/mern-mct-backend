@@ -9,7 +9,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(cookie_parser());
-
 db();
 
 app.get("/", (req, res) => {

@@ -11,6 +11,16 @@ router.get("/", (req, res) => {
     });
 });
 
+router.post("/insert", (req, res) => {
+  Users.insertMany(req.body)
+    .then((message) => {
+      res.status(200).send(message);
+    })
+    .catch((error) => {
+      res.status(500).send({ message: "Try again", error });
+    });
+});
+
 router.get("/id/:id", (req, res) => {
   const id = req.params.id;
   console.log(id);

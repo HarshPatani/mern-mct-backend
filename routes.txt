@@ -1,0 +1,22 @@
+******* Auth Routes ********
+
+post=> /auth/register = register user
+post=> /auth/signin = login user
+
+******* Product Routes ********
+
+get=> /products = get all products
+get=> /products/categories = get all products categories
+get=> /products/electronics = get only electronic products
+get=> /products/jewelery = get only jewelery products
+get=> /products/mensclothing = get only mens clothing products
+get=> /products/womensclothing = get only womens clothing products
+
+******* User Routes ********
+
+get=> /users = get all users info
+get=> /users/id/:id = get specific user info
+delete=> /users/id/:id = delete specific user
+put=> /users/id/:id = update specific user
+get=> /users/gender/:gender = gender based user info
+
